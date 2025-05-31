@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/php-cicd-app'
+        IMAGE_NAME = 'kovan2525/php-cicd-app'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/yourusername/php-cicd-app.git'
+                git 'https://github.com/kovan2525/php-cicd-app.git'
             }
         }
 
