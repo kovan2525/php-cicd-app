@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/kovan2525/php-cicd-app.git'
+                git branch: 'main', url: 'https://github.com/kovan2525/php-cicd-app.git'
             }
         }
 
